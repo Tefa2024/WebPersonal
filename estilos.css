@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.7;
+}
+ 
+
+.encabezado {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+ 
+.encabezado h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+ 
+.encabezado p {
+    font-size: 1.1rem;
+}
+ 
+
+.navegacion {
+    background-color: #172554;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+ 
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+ 
+.navegacion a:hover {
+    color: #93c5fd;
+}
+ 
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+ 
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+}
+ 
+.tarjeta h2 {
+    color: #1d4ed8;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 10px;
+}
+ 
+.tarjeta p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+ 
+
+.imagen-personal {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+ 
+
+.intereses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.interes {
+    background-color: #eff6ff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+}
+ 
+.interes h3 {
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+ 
+.interes p {
+    margin-bottom: 0;
+    text-align: left;
+}
+ 
+
+.boton-contacto {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+ 
+.boton-contacto:hover {
+    background-color: #1e40af;
+}
+ 
+/* Nota */
+.nota {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+ 
+/* Pie de página */
+.pie {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+ 
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+    .encabezado h1 {
+        font-size: 1.8rem;
+    }
+ 
+    .navegacion a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+ 
+    .intereses {
+        grid-template-columns: 1fr;
+    }
+ 
+    .tarjeta {
+        padding: 20px;
+    }
+ 
+    .contenedor {
+        width: 94%;
+    }
+}
